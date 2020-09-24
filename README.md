@@ -11,7 +11,9 @@
 
 ```nano /etc/sysctl.conf```
 
-```net.ipv4.ip_forward=1```
+edit ```#net.ipv4.ip_forward=1``` menjadi ```net.ipv4.ip_forward=1```
+
+simpan ```ctrl+x``` ```y``` ```enter```
 
 reboot server
 
@@ -53,6 +55,8 @@ edit satu per satu
 
 ganti bagian ```config=/root/client.ovpn``` dengan lokasi config Anda
 
+simpan ```ctrl+x``` ```y``` ```enter```
+
 ### vpnmon startup
 
 ```nano /etc/rc.local```
@@ -60,6 +64,8 @@ ganti bagian ```config=/root/client.ovpn``` dengan lokasi config Anda
 tambahkan baris berikut
 
 ```/usr/bin/ovpnmon```
+
+simpan ```ctrl+x``` ```y``` ```enter```
 
 reboot openWrt
 
