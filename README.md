@@ -64,3 +64,6 @@ reboot openWrt
 
 ```ovpn yt``` atau ```ovpn ig```
 
+### contoh config proxy ovpn
+cek di file config-proxy-ovpn.md
+
