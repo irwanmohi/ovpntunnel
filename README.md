@@ -6,7 +6,20 @@
 ```wget https://git.io/vpn -O openvpn.sh && chmod +x openvpn.sh```
 #### command untuk install dan membuat config ovpn
 ```./openvpn.sh```
-#### penjelasan
+
+### forward inet
+
+```nano /etc/sysctl.conf```
+
+```net.ipv4.ip_forward=1```
+
+reboot server
+
+### tambahan squid proxy
+https://github.com/serverok/squid-proxy-installer
+
+
+#### penjelasan openvpn
 Secara default config aka digenerate di ```/root/client.ovpn```
 
 untuk mendapatkannya kita bisa menggunakan simple http server dari python
@@ -17,18 +30,6 @@ python -m SimpleHTTPServer 8000
 ```
 
 kemudian buka di browser http://ip-vps:8000/configname.ovpn
-
-
-### forward inet
-
-```nano /etc/sysctl.conf```
-
-```net.ipv4.ip_forward=1```
-
-### squid proxy
-https://github.com/serverok/squid-proxy-installer
-
-reboot server
 
 ## client
 
