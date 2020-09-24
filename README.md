@@ -19,8 +19,6 @@ python -m SimpleHTTPServer 8000
 kemudian buka di browser http://ip-vps:8000/configname.ovpn
 
 
-tutorial bahasa Indonesia [kangarif.net](https://andykamt.com/tutorial-install-dan-konfigurasi-openvpn-di-vps-ubuntu-debian/)
-
 ### forward inet
 
 ```nano /etc/sysctl.conf```
