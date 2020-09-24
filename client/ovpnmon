@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#config
+config=/root/client.ovpn
+
+#ovpn monitor
+function awms_Mon {
+SERVICE="openvpn"
+if pgrep -x "$SERVICE" >/dev/null
+then
+    echo "$SERVICE is running"
+        sleep 10
+        awms_Mon
+else
+    echo "$SERVICE stopped"
+        openvpn --config $config > /dev/null &
+        sleep 10
+        awms_Mon
+fi
+}
+
+awms_Mon
