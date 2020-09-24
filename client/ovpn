@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#config
+config=/root/client.ovpn
+proxyHost="http-proxy-option CUSTOM-HEADER Host"
+
+case $1 in
+"yt")
+
+sed -i -e "s/$proxyHost m.instagram.com/$proxyHost m.youtube.com/g" $config
+killall openvpn
+cat $config | grep Host
+;;
+"ig")
+
+sed -i -e "s/$proxyHost m.youtube.com/$proxyHost m.instagram.com/g" $config
+killall openvpn
+cat $config | grep Host
+;;
+
+esac
+exit
