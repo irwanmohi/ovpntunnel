@@ -45,6 +45,10 @@ wget -O /usr/bin/ovpn https://raw.githubusercontent.com/laksa19/openvpn/master/c
 ```
 ### penggunaan tested [openWrt]
 
+### install openvpn di openWrt
+
+https://rureka.com/cara-install-openvpn-di-openwrt/
+
 edit **ovpnmon** dan **ovpn**
 
 ```
