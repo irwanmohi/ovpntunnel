@@ -7,7 +7,7 @@
 #### command untuk install dan membuat config ovpn
 ```./openvpn.sh```
 
-### forward inet
+### forward internet
 
 ```nano /etc/sysctl.conf```
 
@@ -22,7 +22,7 @@ https://github.com/serverok/squid-proxy-installer
 
 
 ### penjelasan openvpn
-Secara default config aka digenerate di ```/root/client.ovpn```
+Secara default config akan digenerate di ```/root/client.ovpn```
 
 untuk mendapatkannya kita bisa menggunakan simple http server dari python
 
