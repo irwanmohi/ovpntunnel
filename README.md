@@ -38,9 +38,9 @@ kemudian buka di browser http://ip-vps:8000/configname.ovpn
 ## client
 
 ```shell
-wget -O /usr/bin/ovpnmon https://raw.githubusercontent.com/laksa19/openvpn/master/client/ovpnmon && chmod +x /usr/bin/ovpnmon
+wget -O /usr/bin/ovpnmon https://raw.githubusercontent.com/laksa19/ovpntunnel/master/client/ovpnmon && chmod +x /usr/bin/ovpnmon
 
-wget -O /usr/bin/ovpn https://raw.githubusercontent.com/laksa19/openvpn/master/client/ovpn && chmod +x /usr/bin/ovpnmon
+wget -O /usr/bin/ovpn https://raw.githubusercontent.com/laksa19/ovpntunnel/master/client/ovpn && chmod +x /usr/bin/ovpnmon
 
 ```
 ### penggunaan tested [openWrt]
